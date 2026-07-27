@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Justin Smith - Product leader who ships AI systems</title>
+<meta name="description" content="Fifteen years leading B2B SaaS product. Now building the AI systems myself: 62 services, agent fleets, cross-session memory, and a billing SaaS venture.">
+<style>
+  :root {
+    --bg: #faf9f7; --fg: #1f2328; --muted: #59636e; --line: #e4e1dc;
+    --accent: #b4530a; --card: #ffffff; --code: #f2f0ec;
+    --max: 46rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12141a; --fg: #e6e4e0; --muted: #9aa2ad; --line: #2a2e38;
+      --accent: #e8833a; --card: #191c24; --code: #1f232d;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.65 Charter, Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header, main, footer { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+  header { padding-top: 4.5rem; }
+  h1, h2, h3, .k {
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  }
+  h1 { font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.015em; }
+  .tagline { font-size: 1.25rem; color: var(--accent); margin-top: .4rem;
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-weight: 600; }
+  .lede { margin-top: 1.4rem; font-size: 1.06rem; }
+  .proof { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; margin-top: 1.6rem;
+    padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .proof div { font-size: .92rem; color: var(--muted); }
+  .proof strong { display: block; color: var(--fg); font-size: 1.25rem;
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+  h2 { margin: 3.2rem 0 1rem; font-size: 1.35rem; }
+  h3 { font-size: 1.02rem; margin-bottom: .2rem; }
+  p + p { margin-top: .9rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-top: 1.2rem; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem 1.1rem; }
+  .card p { color: var(--muted); font-size: .93rem; margin-top: .25rem; }
+  .cs { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1.1rem; margin-top: 1.3rem; }
+  .cs p { color: var(--muted); font-size: .95rem; }
+  ul.plain { list-style: none; padding: 0; margin-top: .8rem; }
+  ul.plain li { padding: .45rem 0; border-bottom: 1px solid var(--line); font-size: .97rem; }
+  ul.plain li:last-child { border-bottom: none; }
+  ul.plain .k { font-weight: 600; }
+  .metrics li strong { color: var(--accent); }
+  footer { padding: 3.5rem 1.25rem 4.5rem; color: var(--muted); font-size: .92rem; }
+  footer .k { font-size: 1rem; color: var(--fg); margin-bottom: .3rem; }
+  .note { font-size: .85rem; color: var(--muted); margin-top: .8rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Justin Smith</h1>
+  <p class="tagline">Product leader who ships AI systems</p>
+  <p class="lede">
+    Fifteen years leading B2B SaaS product teams: Director of Product at
+    Workhuman, Head of Product at Officevibe, Director of Product at
+    SuccessFinder. In 2025 I stopped waiting for engineering capacity and
+    built the systems myself. My machine now runs 62 scheduled services I
+    wrote or wired together, and the story of how is documented, mapped,
+    and open.
+  </p>
+  <div class="proof">
+    <div><strong>62</strong> services running unattended</div>
+    <div><strong>11% &rarr; 31%</strong> activation in 4 months at Workhuman</div>
+    <div><strong>$650K</strong> bookings before full launch at SuccessFinder</div>
+  </div>
+</header>
+
+<main>
+  <h2>The unusual part</h2>
+  <p>
+    I ran product at a talent-assessment company, so when I received my own
+    psychometric profile I treated it as an engineering spec. I score 95 on
+    Accountability and 13 on Establishing Order: I feel responsible for
+    everything and naturally sequence nothing. So every agent in my system
+    forces external capture on loose talk: owner, deadline, next action.
+    Each score tension became a system requirement. The assessment is not a
+    report I read once. It is the operating system.
+  </p>
+
+  <h2>Case studies</h2>
+  <div class="cs">
+    <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/01-assessment-driven-agents.md">The Assessment That Became an Operating System</a></h3>
+    <p>How psychometric score tensions became the design constraints for an agent fleet, and why the pure-LLM first version had to die.</p>
+  </div>
+  <div class="cs">
+    <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/02-memory-spine.md">Every Agent Wakes Up Knowing What the Others Did</a></h3>
+    <p>Cross-agent persistent memory: the architecture, and the five failures that taught me memory is a distributed-systems problem in a productivity costume.</p>
+  </div>
+  <div class="cs">
+    <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/03-psychbill-idea-to-company.md">One Sentence In, One Company Out</a></h3>
+    <p>An idea logged in one line became PsychBill: overnight research, a PRD, a revenue model, and an AI agent company doing parts of the work.</p>
+  </div>
+
+  <h2>Systems running right now</h2>
+  <p>
+    The full architecture map lives at
+    <a href="https://github.com/JustinTSmith/systems">github.com/JustinTSmith/systems</a>.
+    The short version:
+  </p>
+  <div class="grid">
+    <div class="card"><h3>Memory spine</h3><p>Every AI session starts knowing what previous sessions learned. An overnight job briefs each agent on what the others did.</p></div>
+    <div class="card"><h3>Agent routing</h3><p>One Telegram thread; LLM classifiers pick the right agent and model for each message before conversation begins.</p></div>
+    <div class="card"><h3>Voice pipeline</h3><p>One press of the iPhone Action Button: transcribed, classified 8 ways, filed into the vault in seconds.</p></div>
+    <div class="card"><h3>Briefing chain</h3><p>Morning briefing by message and by outbound phone call; four parallel weekly intelligence scans.</p></div>
+    <div class="card"><h3>Self-healing layer</h3><p>Watchdogs restart dead services, nightly security review, health checks that commit their own reports.</p></div>
+    <div class="card"><h3>Agent companies</h3><p>13 companies on Paperclip, including PsychBill; I wrote the OpenRouter adapter their agents run on.</p></div>
+  </div>
+
+  <h2>Shipped and open</h2>
+  <ul class="plain">
+    <li><span class="k"><a href="https://github.com/JustinTSmith/ai-operator-skills">ai-operator-skills</a></span> - five Claude Code skills distilled from pipelines I actually run</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/Life-Operating-System">Life-Operating-System</a></span> - identity-driven daily planning with deterministic scoring and energy-gated modes</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/personal-crm">personal-crm</a></span> - relationship pipeline from Gmail and Calendar with a learning loop</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/car-buying-assistant">car-buying-assistant</a></span> - end-to-end Canadian car purchase agent</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/airline-checkin-skill">airline-checkin-skill</a></span> - automated check-in across 8 airlines</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/weekly-briefings">weekly-briefings</a></span> - the weekly intelligence briefings, published as they generate</li>
+    <li><span class="k"><a href="https://github.com/JustinTSmith/qwen3-tts">qwen3-tts</a></span> - local text-to-speech server, OpenAI-compatible API</li>
+  </ul>
+
+  <h2>Product track record</h2>
+  <ul class="plain metrics">
+    <li><strong>11% to 31%</strong> signup-to-activation in 4 months - Workhuman</li>
+    <li><strong>+50%</strong> PQL conversion and <strong>+15</strong> NPS - Officevibe, while pivoting the product and retaining roughly 100% of clients</li>
+    <li><strong>$650K</strong> bookings before full launch, 9-month relaunch - SuccessFinder</li>
+    <li><strong>Enterprise to SMB</strong> repositioning supporting the sale of Acquisio to Web.com</li>
+    <li><strong>$30M+</strong> equity value contributed across cohort companies - Creative Destruction Lab</li>
+  </ul>
+
+  <h2>Now</h2>
+  <p>
+    Building <strong>PsychBill</strong>, billing automation for Canadian
+    psychiatrists (pre-revenue, Phase 1 in development). Open to product
+    leadership roles where AI capability is the product: B2B SaaS adding
+    real AI to real workflows, founding product roles, or applied-AI
+    consultancies.
+  </p>
+</main>
+
+<footer>
+  <p class="k">Contact</p>
+  <p>
+    <a href="mailto:justintsmith@gmail.com">justintsmith@gmail.com</a> ·
+    <a href="https://github.com/JustinTSmith">GitHub</a> ·
+    <a href="https://linkedin.com/in/justintsmith">LinkedIn</a> ·
+    Squamish, BC, Canada
+  </p>
+  <p class="note">No trackers, no analytics, no cookies. Just HTML.</p>
+</footer>
+
+</body>
+</html>
