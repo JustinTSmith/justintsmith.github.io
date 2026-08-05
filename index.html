@@ -98,7 +98,7 @@
   <h2>Start here</h2>
   <div class="cs">
     <h3><a href="the-machine.html">The Machine</a></h3>
-    <p>The full essay. One operator, seventy-three unattended jobs, roughly ninety agents: what I built, what it taught me, and what broke along the way. Eight chapters, about fifteen minutes.</p>
+    <p>The full essay. One operator, seventy-three unattended jobs, roughly ninety agents: what I built, what it taught me, and what broke along the way. Seven chapters, about fifteen minutes.</p>
   </div>
 
   <h2>Case studies</h2>
@@ -116,11 +116,6 @@
   </div>
 
   <div class="cs">
-    <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/04-agent-security.md">I Gave Agents My Email and Shell Access. Then I Designed for It.</a></h3>
-    <p>A six-layer security posture for an agent fleet: two-stage prompt injection defense, outbound secret and PII redaction, and a nightly council of four adversarial analysts.</p>
-  </div>
-
-  <div class="cs">
     <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/05-local-model-routing.md">Cheap Models, Expensive Mistakes</a></h3>
     <p>A 20-trial harness measuring where local models can replace frontier ones. The local agent did not hallucinate, it silently did nothing 20% of the time, and that shape of failure decided the routing policy.</p>
   </div>
@@ -132,20 +127,10 @@
 
   <h2>Demos</h2>
   <p>
-    Both of these render from a script rather than a screen recording, so they
-    regenerate against the current state of the machine instead of aging into a
-    claim I can no longer reproduce.
+    This renders from a script rather than a screen recording, so it
+    regenerates against the current state of the machine instead of aging into
+    a claim I can no longer reproduce.
   </p>
-
-  <div class="demo">
-    <img src="demos/injection-defense.gif" alt="Terminal: a regex scan scores a benign message 0 and a prompt injection 17, then 51 tests pass." loading="lazy">
-    <p>
-      <a href="https://github.com/JustinTSmith/systems/tree/main/demos/01-injection-defense">Injection defense</a>:
-      the regex stage scoring a benign message and an attack, then the 51-test
-      suite, including the nine ways it breaks the scanner on purpose to check
-      which way it falls.
-    </p>
-  </div>
 
   <div class="demo">
     <img src="demos/platform-health.gif" alt="Terminal: job counts, then a health audit reporting 11 findings and 28 passing checks." loading="lazy">
@@ -171,7 +156,6 @@
     <div class="card"><h3>Self-healing layer</h3><p>Watchdogs restart dead services, nightly security review, health checks that commit their own reports.</p></div>
     <div class="card"><h3>Agent companies</h3><p>13 companies and roughly 90 agents on Paperclip: PsychBill, a medical council, an equity research desk, staffed professional teams.</p></div>
     <div class="card"><h3>Local and cloud routing</h3><p>Ollama and MLX serve local models for mechanical work; judgment escalates to frontier models. One pipeline analyzes on a local 35B and writes on Opus.</p></div>
-    <div class="card"><h3>Security layer</h3><p>Two-stage prompt injection defense, outbound secret and PII redaction, and a nightly council of four adversarial AI analysts.</p></div>
   </div>
 
   <h2>Shipped and open</h2>
@@ -206,7 +190,7 @@
   <ul class="plain">
     <li><span class="k">Product</span> - strategy, product-led growth, OKR design, empowered team models, go-to-market, market repositioning, SDLC, hiring and team building</li>
     <li><span class="k">AI and ML product, in production</span> - model deployment, MLOps process design, model business-impact evaluation, customer-facing ML design, latent-signal and behavioural inference, next-best-action systems, AI requirements from discovery, AI positioning and GTM</li>
-    <li><span class="k">Applied AI, hands-on build</span> - multi-agent orchestration, model routing and cost engineering, agent evaluation harnesses, local model serving (Ollama, MLX), retrieval and persistent agent memory, prompt-injection defense, MCP and tool-calling, Python and TypeScript</li>
+    <li><span class="k">Applied AI, hands-on build</span> - multi-agent orchestration, model routing and cost engineering, agent evaluation harnesses, local model serving (Ollama, MLX), retrieval and persistent agent memory, MCP and tool-calling, Python and TypeScript</li>
   </ul>
 
   <h2>Now</h2>
