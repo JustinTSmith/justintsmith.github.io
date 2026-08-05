@@ -42,7 +42,7 @@
 <header class="wrap">
   <p class="kicker">Essay</p>
   <h1>The Machine</h1>
-  <p class="standfirst">One operator, sixty-nine unattended jobs, and roughly ninety agents on a Mac Studio in Squamish. What I built, what it taught me, and what broke along the way.</p>
+  <p class="standfirst">One operator, seventy-three unattended jobs, and roughly ninety agents on a Mac Studio in Squamish. What I built, what it taught me, and what broke along the way.</p>
   <p class="byline">Justin Smith &middot; product leader who ships AI systems &middot; <a href="/">justintsmith.github.io</a></p>
 </header>
 <main class="wrap">
@@ -51,7 +51,7 @@
 <p>What follows is what got built over the next fourteen months. It now runs my work, my research, my health tracking, my relationships, and two software ventures. Most of it runs while I sleep. This is a tour of the architecture, but more usefully it is a record of what I learned, most of which I learned by getting it wrong first.</p>
 <hr>
 <h2>Chapter 1: What is actually running</h2>
-<p>There is a Mac Studio in my office that does not turn off. On it: sixty-nine scheduled jobs, which breaks down as forty-three LaunchAgents, fourteen cron entries, and twelve agent jobs. Roughly ninety agents spread across thirteen agent companies. Two local model servers, a Postgres instance, a Redis instance, a memory server, and a gateway.</p>
+<p>There is a Mac Studio in my office that does not turn off. On it: seventy-three scheduled jobs, which breaks down as forty-one LaunchAgents, fourteen cron entries, and eighteen agent jobs. Roughly ninety agents spread across thirteen agent companies. Two local model servers, a Postgres instance, a Redis instance, a memory server, and a gateway.</p>
 <p>At 7am my phone rings. Not a notification, an actual call. A script reads the day&#x27;s briefing out of my knowledge vault, rewrites it in the voice of a coach, synthesizes it to audio, and Twilio dials me. I pick up, get told what matters today, and it hangs up.</p>
 <p>On Mondays at 1am, four research agents run in parallel across AI infrastructure, sales signals, competitors, and client verticals. Their findings become a written briefing. The briefing then becomes a podcast-style audio overview, which I listen to while driving, because a briefing I have to sit down and read competes with everything else I have to sit down and read. A fifteen-minute audio file competes with nothing.</p>
 <p>That last decision is the pattern for everything here. The systems are not clever. They are shaped around the specific ways I fail.</p>
@@ -125,7 +125,7 @@
 <h2>The uncomfortable version</h2>
 <p>I built a fleet of agents with broad access first, and designed the security posture second. That is the honest sequence. It is also the sequence most companies are following with agents right now, and the only difference that means anything is whether the second step ever happens.</p>
 <p>I am not an engineer. I spent fifteen years leading product teams and shipping through other people: signup-to-activation from 11 to 31 percent in four months, a fifty percent lift in qualified conversion, a product relaunch that booked $650K before it fully launched. Good work, all of it done by specifying and persuading rather than building.</p>
-<p>In 2025 I stopped waiting for engineering capacity and started building it myself. The result is not elegant. It is sixty-nine scheduled jobs held together by watchdogs, a memory layer I fought into reliability, and a security posture that exists because I kept finding my own outages by accident and decided that finding them should be somebody&#x27;s standing job.</p>
+<p>In 2025 I stopped waiting for engineering capacity and started building it myself. The result is not elegant. It is seventy-three scheduled jobs held together by watchdogs, a memory layer I fought into reliability, and a security posture that exists because I kept finding my own outages by accident and decided that finding them should be somebody&#x27;s standing job.</p>
 <p>But it runs. It has been running for months. And every design decision in it traces back to a specific way I fail, measured rather than assumed, which turns out to be a reasonable way to build software for anyone.</p>
 </main>
 <footer class="wrap">

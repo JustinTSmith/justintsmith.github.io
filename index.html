@@ -38,6 +38,10 @@
   .proof strong { display: block; color: var(--fg); font-size: 1.25rem;
     font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
   h2 { margin: 3.2rem 0 1rem; font-size: 1.35rem; }
+  .demo { margin: 1.6rem 0 2.2rem; }
+  .demo img { width: 100%; height: auto; display: block; border-radius: 6px;
+    border: 1px solid var(--line); background: var(--code); }
+  .demo p { margin-top: .6rem; font-size: .95rem; color: var(--muted); }
   h3 { font-size: 1.02rem; margin-bottom: .2rem; }
   p + p { margin-top: .9rem; }
   a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
@@ -94,7 +98,7 @@
   <h2>Start here</h2>
   <div class="cs">
     <h3><a href="the-machine.html">The Machine</a></h3>
-    <p>The full essay. One operator, sixty-nine unattended jobs, roughly ninety agents: what I built, what it taught me, and what broke along the way. Eight chapters, about fifteen minutes.</p>
+    <p>The full essay. One operator, seventy-three unattended jobs, roughly ninety agents: what I built, what it taught me, and what broke along the way. Eight chapters, about fifteen minutes.</p>
   </div>
 
   <h2>Case studies</h2>
@@ -124,6 +128,32 @@
   <div class="cs">
     <h3><a href="https://github.com/JustinTSmith/systems/blob/main/case-studies/06-product-compass.md">I Built the Product Org I Used to Hire</a></h3>
     <p>A 48-agent product organization with a Chief Product Officer agent. It ran a 29-issue gated product program for PsychBill end to end, and the findings became committed code the next day. What it revealed: craft specifies, judgment does not.</p>
+  </div>
+
+  <h2>Demos</h2>
+  <p>
+    Both of these render from a script rather than a screen recording, so they
+    regenerate against the current state of the machine instead of aging into a
+    claim I can no longer reproduce.
+  </p>
+
+  <div class="demo">
+    <img src="demos/injection-defense.gif" alt="Terminal: a regex scan scores a benign message 0 and a prompt injection 17, then 51 tests pass." loading="lazy">
+    <p>
+      <a href="https://github.com/JustinTSmith/systems/tree/main/demos/01-injection-defense">Injection defense</a>:
+      the regex stage scoring a benign message and an attack, then the 51-test
+      suite, including the nine ways it breaks the scanner on purpose to check
+      which way it falls.
+    </p>
+  </div>
+
+  <div class="demo">
+    <img src="demos/platform-health.gif" alt="Terminal: job counts, then a health audit reporting 11 findings and 28 passing checks." loading="lazy">
+    <p>
+      <a href="https://github.com/JustinTSmith/systems/tree/main/demos/02-platform-health">Platform health</a>:
+      nine check modules over the whole machine in about six seconds.
+      Uncurated, including two bugs the capture exposed in the reporter itself.
+    </p>
   </div>
 
   <h2>Systems running right now</h2>
