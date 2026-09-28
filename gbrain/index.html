@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gbrain</title>
+<meta name="description" content="gbrain — a private, single-user personal knowledge assistant operated by Justin Smith.">
+<style>
+  :root { --bg:#0b0c0e; --fg:#e8e9ea; --muted:#9aa0a6; --line:#2a2d31; --accent:#7cc4ff; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#ffffff; --fg:#16181a; --muted:#5a5f66; --line:#e3e5e8; --accent:#0b63ce; }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); margin: 0; padding: 2.5rem 1.25rem 4rem;
+    font-family: -apple-system, "Avenir Next", "Helvetica Neue", Arial, sans-serif; line-height: 1.6; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; letter-spacing: -0.01em; }
+  .tagline { color: var(--muted); font-size: 1rem; margin-top: 0; margin-bottom: 2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  p, li { color: var(--muted); font-size: .96rem; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; }
+  ul { padding-left: 1.2rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em;
+    border: 1px solid var(--line); border-radius: 4px; padding: .05em .35em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">&larr; justintsmith.github.io</a>
+
+  <h1>gbrain</h1>
+  <p class="tagline">A private, single-user personal knowledge assistant, operated by Justin Smith.</p>
+
+  <p><strong>gbrain</strong> keeps a searchable personal knowledge base on its operator's own
+  computer. It is a private tool built and run by one person for their own use. It is not a
+  product, not a service, and is not offered to or used by anyone else. There is no sign-up
+  and no other users.</p>
+
+  <h2>What gbrain connects to</h2>
+  <p>With the operator's explicit consent, gbrain reads the operator's own Google data using
+  <strong>read-only</strong> access:</p>
+  <ul>
+    <li><strong>Gmail</strong> (<code>gmail.readonly</code>) — message threads, so the operator can
+        find their own past correspondence and track outstanding replies.</li>
+    <li><strong>Google Calendar</strong> (<code>calendar.readonly</code>) — events, to keep a
+        searchable history of the operator's own meetings.</li>
+    <li><strong>Google Contacts</strong> (<code>contacts.readonly</code>) — names and addresses,
+        to resolve who appears in that history.</li>
+  </ul>
+  <p>gbrain never sends email, never modifies calendars, and never changes contacts. All
+  retrieved data stays on the operator's own machine.</p>
+
+  <h2>Where data goes</h2>
+  <p>Nowhere. Retrieved content and OAuth tokens are stored locally on the operator's own
+  computer. Nothing is uploaded to any server controlled by this application, and no data is
+  sold, shared, or used for advertising, profiling, or model training.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be withdrawn at any time from
+  <a href="https://myaccount.google.com/permissions">Google Account → Third-party access</a>,
+  which immediately ends gbrain's ability to read any further data.</p>
+
+  <footer>
+    <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></p>
+    <p>Operated by Justin Smith · <code>justintsmith [at] gmail [dot] com</code></p>
+  </footer>
+</main>
+</body>
+</html>
